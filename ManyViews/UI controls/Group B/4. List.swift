@@ -23,10 +23,10 @@ struct ListSection: View {
         Text("Using ForEach Inside List")
       }
       NavigationLink(destination: ListView5()) {
-        Text("Using ForEach Inside List")
+        Text("Editing and Deleting Items")
       }
       NavigationLink(destination: ListView6()) {
-        Text("Editing and Deleting Items")
+        Text("Sectioning in Lists")
       }
       NavigationLink(destination: ListView7()) {
         Text("List with Navigation")
