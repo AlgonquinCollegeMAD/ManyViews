@@ -15,7 +15,7 @@ struct ActivityIndicatorSection: View {
         Text("Basic Activity Indicator")
       }
       NavigationLink(destination: LoadingView()) {
-        Text(" Advanced Activity Indicator")
+        Text("Advanced Activity Indicator")
       }
     }
   }
