@@ -43,7 +43,7 @@ struct NavigationLinkView1: View {
             .cornerRadius(10)
         }
       }
-      .navigationTitle("Home")
+      .navigationTitle("The Home")
     }
   }
 }
@@ -51,6 +51,23 @@ struct NavigationLinkView1: View {
 struct NavigationLinkDetailView1: View {
   var body: some View {
     Text("This is the Detail View")
+      .font(.largeTitle)
+      .padding()
+      .navigationTitle("Detail")
+      NavigationLink(destination: NavigationLinkSuperDetailedView1()) {
+          Text("Go to my Super Detailed View")
+            .font(.headline)
+            .foregroundColor(.blue)
+            .padding()
+            .background(Color.yellow)
+            .cornerRadius(10)
+      }
+  }
+}
+
+struct NavigationLinkSuperDetailedView1: View {
+  var body: some View {
+    Text("This is the SuperDetailed View")
       .font(.largeTitle)
       .padding()
       .navigationTitle("Detail")
